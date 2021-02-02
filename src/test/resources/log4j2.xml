@@ -13,7 +13,7 @@
 
     <loggers>
 
-        <logger name="io.ajmanlove" level="INFO"/>
+        <logger name="com.ajmanlove" level="INFO"/>
         <logger name="org.springframework" level="INFO"/>
 
         <root level="INFO">
