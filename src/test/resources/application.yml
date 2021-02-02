@@ -1,0 +1,28 @@
+server:
+  port: 8181
+
+spring:
+
+  datasource:
+    driverClassName: "org.h2.Driver"
+    url: "jdbc:h2:~/testspringboothibernate"
+    username: "springboothibernate"
+    password: ""
+
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+    hibernate:
+      ddl-auto: create-drop
+
+# Metrics related configurations
+management:
+  endpoint:
+    metrics.enabled: true
+    prometheus.enabled: true
+  endpoints:
+    web.exposure.include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
